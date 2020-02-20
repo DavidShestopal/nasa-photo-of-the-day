@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import PhotoCard from './components/PhotoCard';
+import FluidJumborton from './components/FluidJumbotron';
 import './App.css';
 
 import Example from './components/example';
@@ -17,7 +18,7 @@ function App() {
   return (
     <div className="App">
       <Example />
-      <h1>NASA APOD</h1>
+      <FluidJumborton />
       <PhotoCard title={image.title} imageurl={image.url} explanation={image.explanation} date={image.date} />
     </div>
   );
