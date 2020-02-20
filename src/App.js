@@ -3,6 +3,8 @@ import axios from 'axios';
 import PhotoCard from './components/PhotoCard';
 import './App.css';
 
+import Example from './components/example';
+
 function App() {
   const [image, setImage] = useState({});
   useEffect(() => {
@@ -14,6 +16,7 @@ function App() {
 
   return (
     <div className="App">
+      <Example />
       <h1>NASA APOD</h1>
       <PhotoCard title={image.title} imageurl={image.url} explanation={image.explanation} date={image.date} />
     </div>
